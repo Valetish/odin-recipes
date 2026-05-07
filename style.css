@@ -19,6 +19,11 @@
     box-sizing: border-box;
 }
 
+html {
+    background-color: #060623;
+    background-attachment: fixed;
+}
+
 body {
     font-family: super, Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #060623 0%, #061f28 100%);

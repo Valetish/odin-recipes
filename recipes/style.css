@@ -19,11 +19,12 @@
 }
 
 html {
-    background: linear-gradient(135deg, #060623 0%, #061f28 100%);
+    background-color: #060623;
     background-attachment: fixed;
 }
 
 body {
+    background: linear-gradient(135deg, #060623 0%, #061f28 100%);
     font-family: super, Tahoma, Geneva, Verdana, sans-serif;
     background: transparent;
     min-height: 100vh;
