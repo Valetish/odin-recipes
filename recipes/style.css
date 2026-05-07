@@ -173,6 +173,12 @@ a:hover {
     body {
         padding: 20px 15px;
     }
+
+    img[src*="images"] {
+        width: 120px !important;
+        height: 120px !important;
+        max-width: 120px !important;
+    }
 }
 
 @keyframes rotate {
@@ -184,8 +190,8 @@ a:hover {
     }
 }
 img{
-    width: 200px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -193,7 +199,7 @@ img{
     align-items: center;
     box-shadow: 0 8px 30px rgba(163, 167, 199, 0.3);
     animation: rotate 8s linear infinite ;
-    flex-shrink: 0;
+    flex-shrink: 1;
 }
 
 img {
