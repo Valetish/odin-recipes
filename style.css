@@ -1,0 +1,180 @@
+@font-face {
+  font-family: 'DeFonte';
+  src: url('fonts/defonte/PostScript/DeFonte\ reduced\ Leger.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'super';
+  src: url('fonts/Outfit/Outfit-VariableFont_wght.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: super, Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #060623 0%, #061f28 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.content {
+    text-align: center;
+}
+
+/* H1 Slide Down Animation */
+h1 {
+    font-family: DeFonte;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(222, 252, 255);
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+    animation: slideDown 0.8s ease-out;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-45px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Links Pop Up Animation */
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+li {
+    animation: popUp 0.6s ease-out backwards;
+}
+
+li:nth-child(1) {
+    animation-delay: 0.3s;
+}
+
+li:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+li:nth-child(3) {
+    animation-delay: 0.7s;
+}
+
+@keyframes popUp {
+    from {
+        opacity: 0;
+        transform: scale(0) translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+a {
+    color: rgb(194, 232, 236, 0.8);
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 12px 30px;
+    background: rgba(87, 120, 162, 0.2);
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    border: 2px solid rgba(87, 120, 162, 0.5);
+}
+
+a:hover {
+    color: rgb(194, 232, 236, 1);
+    background: rgba(87, 120, 162, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-color: rgb(143, 203, 215);
+}
+
+/* Circular Images with Rotation */
+.image-circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 30px rgba(163, 167, 199, 0.3);
+    animation: rotate 8s linear infinite;
+    flex-shrink: 0;
+}
+
+.image-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.left-image {
+    animation-delay: 0s;
+}
+
+.right-image {
+    animation-delay: -4s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    a {
+        font-size: 1.1rem;
+    }
+
+    .image-circle {
+        width: 150px;
+        height: 150px;
+    }
+}
