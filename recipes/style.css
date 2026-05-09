@@ -18,15 +18,9 @@
     box-sizing: border-box;
 }
 
-html {
-    background-color: #060623;
-    background-attachment: fixed;
-}
-
 body {
-    background: linear-gradient(135deg, #060623 0%, #061f28 100%);
     font-family: super, Tahoma, Geneva, Verdana, sans-serif;
-    background: transparent;
+    background: linear-gradient(135deg, #060623 0%, #061f28 100%);
     min-height: 100vh;
     padding: 40px 20px;
     color: rgb(222, 252, 255);
@@ -58,8 +52,7 @@ h3 {
     margin-top: 30px;
     margin-bottom: 20px;
     text-shadow: 2px 2pfx 4px rgba(0, 0, 0, 0.3);
-    animation: slideDown 0.4s ease-out;
-
+    
 }
 
 h4 {
@@ -173,12 +166,6 @@ a:hover {
     body {
         padding: 20px 15px;
     }
-
-    img[src*="images"] {
-        width: 120px !important;
-        height: 120px !important;
-        max-width: 120px !important;
-    }
 }
 
 @keyframes rotate {
@@ -190,8 +177,8 @@ a:hover {
     }
 }
 img{
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
     display: flex;
@@ -199,7 +186,7 @@ img{
     align-items: center;
     box-shadow: 0 8px 30px rgba(163, 167, 199, 0.3);
     animation: rotate 8s linear infinite ;
-    flex-shrink: 1;
+    flex-shrink: 0;
 }
 
 img {
@@ -209,5 +196,5 @@ img {
 }
 span{
     font-weight: bolder;
-    color: rgba(182, 230, 235, 0.9);
-}
+    color: rgba(182, 230, 2
+    /* done */
